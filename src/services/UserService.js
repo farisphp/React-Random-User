@@ -1,5 +1,5 @@
 export const getUser = async (page, size, search, gender) => {
-    let url = `https://randomuser.me/api/?page=${page}$pageSize=${size}&results=${size}`;
+    let url = `https://randomuser.me/api/?page=${page}&pageSize=${size}&results=${size}`;
 
     if (gender !== "all") {
       url += `&gender=${gender}`
